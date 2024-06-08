@@ -1,0 +1,391 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+.navbar{
+  font-family: "ArcadeClassic", sans-serif;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+}
+
+.navbar a {
+  color: rgb(6, 226, 6);
+  text-decoration: none;
+  padding: 15px;
+}
+
+.navbar a:hover{
+  color: white !important;
+}
+
+.nav-link:link,
+.nav-link:visited,
+.nav-link:active,
+#titulo-header:link,
+#titulo-header:visited,
+#titulo-header:active{
+  color: rgb(6, 226, 6) !important;
+}
+
+#titulo-header{
+  font-size: 30px;
+}
+
+#titulo-header:hover{
+  color: rgb(6, 226, 6);
+}
+
+.redes-encabezado{
+  align-items: center;
+}
+
+.tiktok-header, .instagram-header{
+  font-size: 1.5rem;
+}
+
+span{
+  color: white;
+  font-size: 1.5rem;
+}
+
+.dropdown-toggle:focus {
+  color: white !important;
+}
+
+.dropdown-menu{
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.logo-header {
+  max-width: 100px;
+}
+
+body {
+  background-color: black;
+  background-image: url("./imagenes/transicion-espacio.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+}
+
+.main-index {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.div-portada {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  margin-top: 5vh;
+}
+
+.portada-main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.portada-titulo-uno {
+  font-size: 5rem;
+  font-family: "ArcadeClassic", sans-serif;
+  font-weight: 100;
+  color: rgb(6, 226, 6);
+}
+
+.bienvenida-art {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+  max-width: 600px;
+  text-align: center;
+  align-items: center;
+  border: 1px solid lightgreen;
+  padding: 1rem;
+  box-shadow: 0px 0px 10px 2px lightgreen;
+  backdrop-filter: blur(20px);
+  margin-bottom: 2rem;
+}
+
+.imagen-del-art {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 3.5px;
+}
+
+.texto-art {
+  text-decoration: none;
+  color: rgb(6, 226, 6);
+  font-family: "ArcadeClassic", sans-serif;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin-top: 1rem;
+}
+
+.texto-enlace-art {
+  margin-top: 10px;
+  cursor: pointer;
+  color: rgb(6, 226, 6);
+  font-family: "ArcadeClassic", sans-serif;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 400;
+  border: 1px solid rgb(6, 226, 6);
+  padding: 10px 20px;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  animation: jump 1s infinite;
+}
+
+.texto-ubi {
+  margin-top: 5rem;
+  color: rgb(6, 226, 6);
+  font-family: "ArcadeClassic", sans-serif;
+  font-size: 1rem;
+  letter-spacing: 1.5px;
+}
+
+@keyframes jump {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+#scrollDownButton {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+#scrollDownButton span {
+  font-size: 2rem;
+  color: white;
+  transition: transform 0.3s ease;
+}
+
+#scrollDownButton:hover span {
+  transform: translateY(5px);
+}
+
+.hidden {
+  display: none;
+}
+
+.section {
+  margin: 2rem 0;
+  padding: 2rem;
+  border-radius: 10px;
+  backdrop-filter: blur(20px);
+  color: rgb(6, 226, 6);
+  font-family: "ArcadeClassic", sans-serif;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.section p {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.eventos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 2rem 0;
+}
+
+.section-eventos {
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  backdrop-filter: blur(20px);
+  color: rgb(6, 226, 6);
+  font-family: "ArcadeClassic", sans-serif;
+  border: 1px solid rgb(6, 226, 6);
+  box-shadow: 0px 0px 10px 2px lightgreen;
+}
+
+.parrafo-fechas {
+  font-style: italic;
+  border-top: 1px solid rgb(6, 226, 6);
+}
+
+.section-ubi {
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  backdrop-filter: blur(20px);
+  opacity: 1px;
+  color: rgb(6, 226, 6);
+  font-family: "ArcadeClassic", sans-serif;
+  border: 1px solid rgb(6, 226, 6);
+  box-shadow: 0px 0px 10px 2px lightgreen;
+}
+
+.icono-orbit-ubi {
+  max-width: 150px;
+}
+
+.container-titulo-contactate {
+  margin: 10rem 0 0 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+}
+
+.titulo-contactate {
+  color: rgb(6, 226, 6);
+  font-family: "ArcadeClassic", sans-serif;
+  font-weight: 100;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.art-segunda-pag {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.text-tiktok,
+.text-instagram {
+  color: rgb(6, 226, 6);
+  font-family: "ArcadeClassic", sans-serif;
+}
+
+.contact-form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 2rem 0;
+  padding: 1rem;
+  border: 1px solid lightgreen;
+  box-shadow: 0px 0px 10px 2px lightgreen;
+  backdrop-filter: blur(20px);
+  width: 80%;
+  max-width: 400px;
+  color: rgb(6, 226, 6);
+  font-family: "ArcadeClassic", sans-serif;
+}
+
+.contact-form-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid lightgreen;
+  background: black;
+  color: white;
+  font-family: "Noto Sans Elymaic", sans-serif;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: rgb(6, 226, 6);
+  color: black;
+  font-family: "ArcadeClassic", sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: white;
+  color: black;
+}
+
+/* PAGINA DE PROMOTORES
+----------------------------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;400;500;600;700&display=swap');
+
+.main-promotores{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+.titulo-promotores{
+  text-align: center;
+  margin-top: 3rem;
+  color: rgb(6, 226, 6);
+  font-family: "ArcadeClassic", sans-serif;
+  word-spacing: 20px;
+}
+
+.global-promotores{
+  margin: 5rem 7rem 0 7rem;
+  font-family: 'montserrat';
+}
+
+.card{
+  border: 1px solid rgb(6, 226, 6);
+  box-shadow: 0px 3px 10px rgb(6, 226, 6);
+  margin-bottom: 2rem;
+}
+
+.card-body{
+  background: blur(1px);
+  background-color: rgba(0, 0, 0, 0.66);
+  text-align: center;
+}
+
+.card-text, .card-title{
+  color: white;
+}
+
+
